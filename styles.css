@@ -1,3 +1,4 @@
+/* Setting up the page and adding background image */
 body {
   display: flex;
   flex-direction: column;
@@ -9,9 +10,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
+
 
 }
+
+/* Setting up the header and its items */
 header {
   display: flex;
   justify-content: space-between;
@@ -19,12 +22,14 @@ header {
   align-items: center;
 }
 
+/* Left hand side icons in header */
 .group {
     display: flex;
     flex-basis: 40%;
     
 }
 
+/* Setting up the links */
 .links {
   display: flex;
   align-items: center;
@@ -35,6 +40,7 @@ header {
   justify-content: flex-end;
 }
 
+/* Remove underlines and set colour */
 a {
   text-decoration: none;
   padding: none;
@@ -42,14 +48,15 @@ a {
   color: white;
 }
 
+/* /* setup the main container containing all images  */
 .container {
  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-grow: 2;
 }
 
+/* Adjust all the images to equal height and resize */
 main img {
   width: 200px;
   height: auto;
@@ -58,6 +65,7 @@ main img {
   border-radius: 6px;
 }
 
+/* each individual album and text is a container, get text to wrap */
 .album {
   display: flex;
   flex-direction: column;
@@ -67,6 +75,7 @@ main img {
   justify-content: baseline;
 }
 
+/* Change the font of the text */
 p:nth-child(2) {
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
@@ -74,27 +83,30 @@ p:nth-child(2) {
   font-weight: bold;
 }
 
+/* Change size of owl icon top left. */
+
 .group > img {
   width: 100px;
   object-fit: contain;
 }
 
+/* Footer setup to center align x,y */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Oswald",sans-serif;
     width: 100%;
-    flex-shrink: 0;
     
 }
 
+/* images  enlarge and fade on hover */
 main img:hover {
   opacity: 0.5;
-  width: 250px;
+  width: 225px;
   transition: ease-in-out 0.2s;
 }
-
+/* media Queries for a smaller screen size adjusting image size and fonts */
 @media screen and (max-width:1080px) {
   
   main img {
@@ -111,8 +123,14 @@ main img:hover {
     font-weight: bold;
   }
 
-}
+  .links {
 
+    font-size: 16px;
+
+  }
+
+}
+/* Mobile view media queries transforming layour to columns */
 @media screen and (max-width: 425px)
 {
   main img {

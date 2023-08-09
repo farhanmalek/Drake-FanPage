@@ -20,6 +20,12 @@ body {
     
   
   }
+  /* Set up of the main container */
+.container-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /* Styling for the Header only */
   header {
     display: flex;
@@ -56,38 +62,40 @@ body {
     object-fit: contain;
   }
 
+  /* Style the main form and its elements inside */
+
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    width: 30%;
+    width: 30%; 
     background-color: black;
     transition: ease-out 0.5s;
     align-self: center;
     border-radius: 6px;
-    background-image: linear-gradient(black,white)
-   
+    background-image: linear-gradient(black,white);
+    gap: 30px;
+    overflow: auto;
   }
-
+  /* Styling the full name and email inputs getting them to align side to side */
   .name {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
 
-  .info {
+  /* margin for textarea space */
+  .info,textarea {
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
   }
 
+/* styling the button */
   input[type=submit] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 10px;
     border-radius: 6px;
     transition: ease-out 0.2s;
@@ -95,12 +103,9 @@ body {
 
   }
 
+  /* Fonts being added and sized */
 .card > h1 {
-    margin-top: 0px;
-    position: fixed;
-    top: 250px;
     font-family: "Oswald", sans-serif;
-    
 }
 
 form {
@@ -110,6 +115,8 @@ form {
 input {
     font-size: 20px;
 }
+
+/* Hover feature for button and card */
 
 input[type=submit]:hover {
     opacity: 0.2;
@@ -123,8 +130,10 @@ input[type=submit]:hover {
 
 textarea {
     font-size: 20px;
+
 }
 
+/* Simple footer styling */
 footer {
     display: flex;
     justify-content: center;
@@ -136,23 +145,44 @@ footer {
     bottom: 30px;
     
 }
-
-header + img {
+/* Styling and containing two nike logos */
+.container-1 img {
   width: 300px;
-  
-  align-self: center;
-  position: fixed;
-  right: 250px;
-  bottom: 50%;
+  object-fit: contain;
   
 }
 
 div + img {
   width: 300px;
+  object-fit: contain;
   
-  align-self: center;
-  position: fixed;
-  left: 250px;
-  bottom: 50%;
+}
+
+/* Media queries for different screen sizes, incomplete for mobile */
+@media screen and (max-width:1850px) {
+  .card {
+    width: 50%;
+  }
+  .container-1 img {
+    width: 100px;
+    object-fit: contain;
+    
+  }
+  
+  div + img {
+    width: 100px;
+    object-fit: contain;
+    
+  }
+
+  
+}
+
+@media screen and (max-width:1200px) {
+  .card{
+    width: 30%;
+    flex-wrap: wrap;
+  }
 
 }
+
