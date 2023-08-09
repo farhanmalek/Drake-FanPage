@@ -123,11 +123,6 @@ input[type=submit]:hover {
     transition: ease-in-out 0.2s;
 }
 
-.card:hover {
-    width: 32%;
-    transition: ease-in-out 0.5s;
-}
-
 textarea {
     font-size: 20px;
 
@@ -152,11 +147,6 @@ footer {
   
 }
 
-div + img {
-  width: 300px;
-  object-fit: contain;
-  
-}
 
 /* Media queries for different screen sizes, incomplete for mobile */
 @media screen and (max-width:1850px) {
@@ -175,7 +165,6 @@ div + img {
     
   }
 
-  
 }
 
 @media screen and (max-width:1200px) {
@@ -186,3 +175,25 @@ div + img {
 
 }
 
+
+@keyframes slideup {
+  from {
+    transform: translateY(-200px);
+
+  }
+
+  to {
+    transform:translateY(0);
+  }
+}
+
+.container-1 img {
+animation-name: slideup;
+animation-duration: 1s;
+animation-timing-function: linear;
+
+
+
+
+
+}
