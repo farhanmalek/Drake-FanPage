@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling for the page */
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    gap: 80px;
+    background-image: linear-gradient(rgb(0, 0, 7), rgb(2, 89, 116));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+  
+  }
+/* Styling for the Header only */
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    align-items: center;
+  }
+
+  .group {
+    display: flex;
+    flex-basis: 40%;
+    
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+    flex-basis: 60%;
+    justify-content: flex-end;
+  }
+
+  a {
+    text-decoration: none;
+    padding: none;
+    margin: none;
+    color: white;
+  }
+
+  .group > img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 30%;
+    background-color: black;
+    transition: ease-out 0.5s;
+    align-self: center;
+    border-radius: 6px;
+    background-image: linear-gradient(black,white)
+   
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type=submit] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    transition: ease-out 0.2s;
+    border: 2px solid white;
+
+  }
+
+.card > h1 {
+    margin-top: 0px;
+    position: fixed;
+    top: 250px;
+    font-family: "Oswald", sans-serif;
+    
+}
+
+form {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+input {
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.2;
+    transition: ease-in-out 0.2s;
+}
+
+.card:hover {
+    width: 32%;
+    transition: ease-in-out 0.5s;
+}
+
+textarea {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald",sans-serif;
+    width: 100%;
+    flex-shrink: 0;
+    border: 1px solid red;
+    position: fixed;
+    bottom: 30px;
+    
+}
+
+header + img {
+  width: 300px;
+  
+  align-self: center;
+  position: fixed;
+  right: 250px;
+  bottom: 50%;
+  
+}
+
+div + img {
+  width: 300px;
+  
+  align-self: center;
+  position: fixed;
+  left: 250px;
+  bottom: 50%;
+
+}
