@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   gap: 80px;
-  background-image: linear-gradient(rgb(0, 0, 7), rgb(2, 89, 116));
+  background-image: linear-gradient(to bottom, rgb(0, 0, 7), rgb(10, 77, 109)); color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -38,6 +38,10 @@ header {
   font-size: 24px;
   flex-basis: 60%;
   justify-content: flex-end;
+}
+
+a:hover {
+  color: goldenrod;
 }
 
 /* Remove underlines and set colour */
@@ -169,26 +173,34 @@ main img:hover {
 }
 
 
-@keyframes Slide {
+
+/* Add fade to main images */
+@keyframes Fade {
   from {
-    transform: translateX(45vw);
+    opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-h1 {
-  animation-name: Slide;
+main img {
+  animation-name: Fade;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
 
 
-
-
-
-
+.display-item {
+  background-color: #ffc107;
+  font-size: 18px;
+  transform: scale(1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  width: 500px;
+}

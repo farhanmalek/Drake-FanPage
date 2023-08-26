@@ -49,6 +49,9 @@ body {
     flex-basis: 60%;
     justify-content: flex-end;
   }
+  a:hover {
+    color: goldenrod;
+  }
 
   a {
     text-decoration: none;
@@ -78,6 +81,7 @@ body {
     background-image: linear-gradient(black,white);
     gap: 30px;
     overflow: auto;
+    opacity: 0.85;
   }
   /* Styling the full name and email inputs getting them to align side to side */
   .name {
