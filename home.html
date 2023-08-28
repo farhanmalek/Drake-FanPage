@@ -37,25 +37,36 @@
         <a href="/MR1/form.html">Contact Me</a>
       </nav>
     </header>
-
+    <div class="filter-bar">
+      <form>
+        <label for="dropdown">Sort By:</label>
+        <select id="dropdown" name="selectedOption">
+          <option value="" disabled selected>Choose an option</option>
+          <option class="filter-choice" value="option1">Farhans Favourite</option>
+          <option class="filter-choice" value="option2">Chronological Order</option>
+          <option class="filter-choice" value="option3">Spotify Rating</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
     <!-- Main container containing all images and text that are nested in their own containers -->
     <main class="container">
       <div class="album">
-        <a target="_blank"><img src="/MR1/images/so-far-so-gone.png" alt="So Far So Gone" id="sofar"/></a>
+        <a href="https://open.spotify.com/album/1LShhEEKRT5MNPcO7jtYHh"    target="_blank"><img src="/MR1/images/so-far-so-gone.png" alt="So Far So Gone" id="sofar"/></a>
         <p>
           "So Far Gone" (2009) - This mixtape propelled Drake to stardom,
           featuring hits like "Best I Ever Had" and "Successful."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/6agmeioaDOBupymziJihgB" target="_blank"><img src="/MR1/images/thank-me-later.jpg" alt="Thank Me Later" /></a>
+        <a href="https://open.spotify.com/album/6agmeioaDOBupymziJihgB" target="_blank"><img src="/MR1/images/thank-me-later.jpg" alt="Thank Me Later" id="thank-me-later" /></a>
         <p>
           "Thank Me Later" (2010) - Drake's debut studio album featuring hits
           like "Over" and "Find Your Love."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/6X1x82kppWZmDzlXXK3y3q" target="_blank"><img src="/MR1/images/take-care.jpg" alt="Take Care" /></a>
+        <a href="https://open.spotify.com/album/6X1x82kppWZmDzlXXK3y3q" target="_blank"><img src="/MR1/images/take-care.jpg" alt="Take Care" id="take-care" /></a>
         <p>
           "Take Care" (2011) - This critically acclaimed album includes singles
           like "Headlines" and "Take Care" ft. Rihanna.
@@ -64,7 +75,7 @@
       <div class="album">
         <a href="https://open.spotify.com/album/2ZUFSbIkmFkGag000RWOpA" target="_blank"><img
           src="/MR1/images/nothing-was-the-same.png"
-          alt="Nothing Was The Same"
+          alt="Nothing Was The Same" id="nothing-was-the-same"
         /></a>
         <p>
           "Nothing Was the Same" (2013) - Hits include "Started from the Bottom"
@@ -74,7 +85,7 @@
       <div class="album">
         <a href="https://open.spotify.com/album/0ptlfJfwGTy0Yvrk14JK1I" target="_blank"><img
           src="/MR1/images/iyrtitl.png"
-          alt="If You Are Reading This It's Too Late"
+          alt="If You Are Reading This It's Too Late" id="iyrtitl"
         /> </a>
         <p>
           "If You're Reading This It's Too Late" (2015) - A surprise mixtape
@@ -82,60 +93,72 @@
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/1ozpmkWcCHwsQ4QTnxOOdT" target="_blank"><img src="/MR1/images/wattba.jpg" alt="What A Time To Be Alive" /></a>
+        <a href="https://open.spotify.com/album/1ozpmkWcCHwsQ4QTnxOOdT" target="_blank"><img src="/MR1/images/wattba.jpg" alt="What A Time To Be Alive" id="wattba" /></a>
         <p>
           "What a Time to Be Alive" (2015) - A collaborative mixtape with
           Future, spawning hits like "Jumpman" and "Big Rings."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/40GMAhriYJRO1rsY4YdrZb" target="_blank"><img src="/MR1/images/views.jpg" alt="Views" /></a>
+        <a href="https://open.spotify.com/album/40GMAhriYJRO1rsY4YdrZb" target="_blank"><img src="/MR1/images/views.jpg" alt="Views" id="views"/></a>
         <p>
           "Views" (2016) - Featuring "Hotline Bling" and "One Dance," it became
           a commercial success.
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/1lXY618HWkwYKJWBRYR4MK"target="_blank"><img src="/MR1/images/more-life.jpg" alt="More Life" /></a>
+        <a href="https://open.spotify.com/album/1lXY618HWkwYKJWBRYR4MK"target="_blank"><img src="/MR1/images/more-life.jpg" alt="More Life" id="more-life"/></a>
         <p>
           "More Life" (2017) - A playlist with hits like "Passionfruit" and
           "Fake Love."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/1ATL5GLyefJaxhQzSPVrLX" target="_blank"><img src="/MR1/images/scorpion.jpg" alt="Scorpion" /></a>
+        <a href="https://open.spotify.com/album/1ATL5GLyefJaxhQzSPVrLX" target="_blank"><img src="/MR1/images/scorpion.jpg" alt="Scorpion" id="scorpion"/></a>
         <p>
           "Scorpion" (2018) - This double album features "God's Plan" and "In My
           Feelings."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/6OQ9gBfg5EXeNAEwGSs6jK" target="_blank"><img src="/MR1/images/dldt.png" alt="DarK Lane Demo Tapes" /></a>
+        <a href="https://open.spotify.com/album/6OQ9gBfg5EXeNAEwGSs6jK" target="_blank"><img src="/MR1/images/dldt.png" alt="Dark Lane Demo Tapes" id="dldt"/></a>
         <p>
           "Dark Lane Demo Tapes" (2020) - A mixtape including tracks like
           "Tootsie Slide" and "Pain 1993."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/3SpBlxme9WbeQdI9kx7KAV" target="_blank"><img src="/MR1/images/clb.png" alt="Certified Lover Boy" /></a>
+        <a href="https://open.spotify.com/album/3SpBlxme9WbeQdI9kx7KAV" target="_blank"><img src="/MR1/images/clb.png" alt="Certified Lover Boy" id="clb"/></a>
         <p>
           "Certified Lover Boy" (2021) - The latest release with hits like "Way
           2 Sexy" and "Laugh Now Cry Later."
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/3cf4iSSKd8ffTncbtKljXw" target="_blank"><img src="/MR1/images/h-m.png" alt="Honestly Never Mind" /></a>
+        <a href="https://open.spotify.com/album/3cf4iSSKd8ffTncbtKljXw" target="_blank"><img src="/MR1/images/h-m.png" alt="Honestly Never Mind" id="h-m"/></a>
         <p>
           Drakes take on house/electronic music, "Honestly, Never Mind" is his
           seventh studio album and features hits like "Sticky" and "Jimmy Cooks"
         </p>
       </div>
       <div class="album">
-        <a href="https://open.spotify.com/album/5MS3MvWHJ3lOZPLiMxzOU6" target="_blank"><img src="/MR1/images/her-loss.png" alt="Her Loss" /></a>
+        <a href="https://open.spotify.com/album/5MS3MvWHJ3lOZPLiMxzOU6" target="_blank"><img src="/MR1/images/her-loss.png" alt="Her Loss" id="her-loss" /></a>
         <p>
           A collaborative effort with 21 Savage, "Her Loss" features mega hits
           such as "Rich Flex" and my personal favourite, "Middle of the Ocean".
         </p>
+      </div>
+      <div class="popup-container">
+        <div class="inner-container">
+        <div class="one">
+          <a href="https://open.spotify.com/album/1LShhEEKRT5MNPcO7jtYHh" target="_blank"><img src="/MR1/images/so-far-so-gone.png" alt="So Far So Gone" id="sofar"/></a>
+          <span>&times;</span>
+        </div>
+        <div class="text">
+          <p>"So Far Gone" (2009) - This mixtape propelled Drake to stardom,
+            featuring hits like "Best I Ever Had" and "Successful."</p>
+        </div>
+      </div>
       </div>
     </main>
     <br/>

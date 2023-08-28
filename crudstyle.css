@@ -154,3 +154,22 @@ form {
 label {
     font-size: larger;
 }
+
+input {
+    border: none;          
+    border-bottom: 1px solid white; 
+    background-color: transparent;  
+    padding: 5px 0;       
+    color: white;          
+    outline: none;         
+    width: 100%;           
+  }
+  
+ 
+  input::placeholder {
+    color: white; 
+  }
+
+  .search-bar input {
+    width: 30%;
+  }
