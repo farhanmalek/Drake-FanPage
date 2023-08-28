@@ -61,19 +61,19 @@ albumContainerArray.forEach((album) => {
   album.onclick = () => {
     const myImg = album.querySelector("img");
     const myText = album.querySelector("p").textContent;
+    const myLink = album.querySelector("a")
     document.querySelector(".popup-container").style.display = "flex";
     document.querySelector(".one img").src = myImg.getAttribute('src');
     document.querySelector(".text p").textContent = myText;
+    document.querySelector(".one a").href = myLink.getAttribute("href");
   };
 });
-
+// click x to get out of popup window
 document.querySelector(".one span").onclick = () => {
   document.querySelector(".popup-container").style.display = "none";
 }
 
-
-
-
+//dont access link when clicked on the main page
 albumContainerArray.forEach(album => {
   const link = album.querySelector("a");
   link.addEventListener("click", (e) => e.preventDefault() )
