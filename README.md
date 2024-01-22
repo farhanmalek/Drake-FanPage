@@ -21,4 +21,4 @@ To view the project locally, simply clone the repository and open the HTML files
 After cloning:
 
 ```bash
-cd your-project
+cd project-name
